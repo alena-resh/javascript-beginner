@@ -64,23 +64,23 @@
 
 
 // 6. Условные операторы
-const courseStatus = 'ready'  //  ready, fail, pending
+// const courseStatus = 'ready'  //  ready, fail, pending
 
-if (courseStatus === 'ready') {
-console.log('Курс уже готов и его можно пройти')
-}
-else if (courseStatus === 'pending'){
-    console.log('Курс в процессе разработки')
-}
-else {
-    console.log('Курс не получился')
-}
+// if (courseStatus === 'ready') {
+// console.log('Курс уже готов и его можно пройти')
+// }
+// else if (courseStatus === 'pending'){
+//     console.log('Курс в процессе разработки')
+// }
+// else {
+//     console.log('Курс не получился')
+// }
 
-const num1 = 42 //  number
-const num2 = '42' //  string
-console.log(num1 === num2)  // приводит к одному типу данных, ===
+// const num1 = 42 //  number
+// const num2 = '42' //  string
+// console.log(num1 === num2)  // приводит к одному типу данных, ===
 
-const isReady = false
+// const isReady = false
 // if (isReady === true) {
 //     console.log('Все готово!')
 // }
@@ -88,16 +88,16 @@ const isReady = false
 //     console.log('Все не готово!')
 // }
 // Тернарные выражение 
-isReady ? console.log('Все готово!') : console.log('Все не готово!')
+// isReady ? console.log('Все готово!') : console.log('Все не готово!')
 
 
-// 7. Булевая логика - && и || или ! не
+// // 7. Булевая логика - && и || или ! не
 
-// 8. Функции - чтобы оптимизировать и не дублировать куски кода
+// // 8. Функции - чтобы оптимизировать и не дублировать куски кода
 
-function calculateAge(year) {
-    return 2023 - year
-}
+// function calculateAge(year) {
+//     return 2023 - year
+// }
 
 // console.log(calculateAge(1993))
 // console.log(calculateAge(1990))
@@ -117,19 +117,52 @@ function calculateAge(year) {
 
 // 10. Массивы
 
-const cars = ['Mazda', 'Mersedes', 'Ford'] // массив состоящий из строк
+// const cars = ['Mazda', 'Mersedes', 'Ford'] // массив состоящий из строк
 
-console.log(cars)
-console.log(cars[1])
-console.log(cars[3])
+// console.log(cars)
+// console.log(cars[1])
+// console.log(cars[3])
 
-cars[0] = 'Porshe'
-cars[3] = 'Mazda'
-console.log(cars)
+// cars[0] = 'Porshe'
+// cars[3] = 'Mazda'
+// console.log(cars)
 
-// длина массива
-console.log(cars.length)
+// // длина массива
+// console.log(cars.length)
 
 // const cars = new Array ('Mazda', 'Mersedes', 'Ford')
 // console.log(cars)
 
+
+// 11. Циклы - итерировать массив
+
+const cars = ['Mazda', 'Mersedes', 'Ford', 'Porshe']
+
+for (let i = 0; i < cars.length; i++){
+    const car = cars[i]
+    console.log(car) 
+}
+
+for (let car of cars){ // переменная car является элементом массива cars
+    console.log(car)
+}
+
+// 12. Объекты - в объект мы группируем определнное количесво значений и создаем разные структуры
+
+const person = {
+    firstName: 'Alena',
+    lastName: 'Resh',
+    year: 2000,
+    languages: ['Ru', 'En', 'Ch'], // объект с определнными свойствами
+    hasHusband: false,
+    greet: function (){
+        console.log('greet from person')
+    }
+}
+console.log(person.lastName) // образаться через .
+console.log(person['lastName']) // через []
+person.hasHusband = true
+person.IsAQA = true
+console.log(person)
+
+person.greet()
