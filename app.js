@@ -64,4 +64,72 @@
 
 
 // 6. Условные операторы
+const courseStatus = 'ready'  //  ready, fail, pending
+
+if (courseStatus === 'ready') {
+console.log('Курс уже готов и его можно пройти')
+}
+else if (courseStatus === 'pending'){
+    console.log('Курс в процессе разработки')
+}
+else {
+    console.log('Курс не получился')
+}
+
+const num1 = 42 //  number
+const num2 = '42' //  string
+console.log(num1 === num2)  // приводит к одному типу данных, ===
+
+const isReady = false
+// if (isReady === true) {
+//     console.log('Все готово!')
+// }
+// else {
+//     console.log('Все не готово!')
+// }
+// Тернарные выражение 
+isReady ? console.log('Все готово!') : console.log('Все не готово!')
+
+
+// 7. Булевая логика - && и || или ! не
+
+// 8. Функции - чтобы оптимизировать и не дублировать куски кода
+
+function calculateAge(year) {
+    return 2023 - year
+}
+
+// console.log(calculateAge(1993))
+// console.log(calculateAge(1990))
+
+// function logInfoAbout(name, year){
+//     const age = calculateAge(year)
+
+//     if (age > 0){
+//     console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+// }
+// else {
+//     console.log('Это уже будущее!')
+// }
+// }
+// logInfoAbout('Alena', 1993)
+// logInfoAbout('Arkadiy', 2024)
+
+// 10. Массивы
+
+const cars = ['Mazda', 'Mersedes', 'Ford'] // массив состоящий из строк
+
+console.log(cars)
+console.log(cars[1])
+console.log(cars[3])
+
+cars[0] = 'Porshe'
+cars[3] = 'Mazda'
+console.log(cars)
+
+// длина массива
+console.log(cars.length)
+
+// const cars = new Array ('Mazda', 'Mersedes', 'Ford')
+// console.log(cars)
 
