@@ -50,7 +50,6 @@ function greet(name){
  console.log(sum(4, 5))
  console.log(sum())
 
-
  function sumAll(...all){
     console.log(all)
     let result = 0
