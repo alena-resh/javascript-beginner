@@ -34,30 +34,46 @@
 
 // 3. Стрелочные функции
 
-function greet(name){
-     console.log('Hello - ', name)
- }
+// function greet(name){
+//      console.log('Hello - ', name)
+//  }
 
- const arrow = (name, age) => {
-    console.log('Hello - ', name, age)
- }
+//  const arrow = (name, age) => {
+//     console.log('Hello - ', name, age)
+//  }
 
- arrow('Alena', 33)
+//  arrow('Alena', 33)
 
  // 4. Параметры по умолчанию
 
- const sum = (a, b) => a + b
- console.log(sum(4, 5))
- console.log(sum())
+//  const sum = (a, b) => a + b
+//  console.log(sum(4, 5))
+//  console.log(sum())
 
- function sumAll(...all){
-    console.log(all)
-    let result = 0
-    for (let num of all) {
-       result += num
-    }
-    return result
- }
+//  function sumAll(...all){
+//     console.log(all)
+//     let result = 0
+//     for (let num of all) {
+//        result += num
+//     }
+//     return result
+//  }
 
- const res = sumAll(1, 2, 3, 4, 5)
- console.log(res)
+//  const res = sumAll(1, 2, 3, 4, 5)
+//  console.log(res)
+
+//  function sortIt(){
+//    let arr1 = [1,1,1,2,2,3];
+//     console.log(arr1.sort((a, b) => b - a));
+//    }
+//  sortIt()
+
+
+// function threeInOne(arr){
+//    let newArr = arr.slice();
+//    for(i = 0; i <= newArr.length - 1; i++){
+//    newArr.splice(i, 3, newArr[i] + newArr[i + 1] + newArr[i + 2])
+//    }
+//    return newArr
+//  }
+//  threeInOne([1, 2, 3, 4, 5])
