@@ -80,3 +80,33 @@ const array22 = ['d', 'e', 'f'];
 const array33 = array11.concat(array22);
 
 console.log(array33);
+
+
+// The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+
+const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+console.log(plants.pop());
+
+
+// The push() method adds the specified elements to the end of an array and returns the new length of the array.
+
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+console.log(animals);
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+
+
+// The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+
+const array4 = [1, 2, 3];
+
+const firstElement = array4.shift();
+
+console.log(array4);
+
+
