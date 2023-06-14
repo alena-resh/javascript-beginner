@@ -73,6 +73,33 @@ function capitalize(word, index, arr) {
 console.log(words);
 
 
+// Here is an example of how we can write a program with for loop and with forEach().
+
+const arrayItems = ['item1', 'item2', 'item3'];
+const copyItems = [];
+
+// using for loop
+for (let i = 0; i < arrayItems.length; i++) {
+  copyItems.push(arrayItems[i]);
+}
+
+console.log(copyItems);
+
+
+let students = ['John', 'Sara', 'Jack'];
+
+// using forEach
+students.forEach(myFunction);
+
+function myFunction(item, index, arr) {
+
+    // adding strings to the array elements
+    arr[index] = 'Hello ' + item;
+}
+
+console.log(students);
+
+
 // The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 
 const array11 = ['a', 'b', 'c'];
@@ -109,4 +136,13 @@ const firstElement = array4.shift();
 
 console.log(array4);
 
+
+
+var a = 5; //число
+a = String(a);//преобразует переменную а в строку
+console.log(a)
+
+var a = "111"; //число
+a = Number(a);//преобразует переменную а в строку
+console.log(a)
 
