@@ -166,3 +166,8 @@ person.IsAQA = true
 console.log(person)
 
 person.greet()
+
+
+console.log(Math.pow(4, 10))
+console.log(Math.pow(2, -5));
+console.log(Math.sqrt(4));

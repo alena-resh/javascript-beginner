@@ -137,12 +137,35 @@ const firstElement = array4.shift();
 console.log(array4);
 
 
+// [2,7,11,15], target = 9 => return indecies
 
-var a = 5; //число
-a = String(a);//преобразует переменную а в строку
-console.log(a)
+var twoSum = function(nums, target) {
+  for (var i=0; i < nums.length; i++){
+      for (var j=i + 1; j < nums.length; j++){
+          if (nums[i] + nums[j] === target){
+              return [i, j];
+          }
+      }
+  }
+};
 
-var a = "111"; //число
-a = Number(a);//преобразует переменную а в строку
-console.log(a)
+// var a = 5; //число
+// a = String(a);//преобразует переменную а в строку
+// console.log(a)
 
+// var a = "111"; //число
+// a = Number(a);//преобразует переменную а в строку
+// console.log(a)
+
+
+// Пирожок в столовой стоит a рублей и b копеек. Определите, сколько рублей и копеек нужно заплатить за n пирожков.
+
+let a = 10 // rub
+let b = 50 // penny
+let n = 3 // count
+
+whole_price_penny = (a * 100 + b) * n
+rub = Math.floor(whole_price_penny/100)
+pennies = whole_price_penny % 100
+
+console.log(`The cost of ${n} buns: ${rub} rub ${pennies} cents`)
