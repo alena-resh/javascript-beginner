@@ -169,3 +169,36 @@ rub = Math.floor(whole_price_penny/100)
 pennies = whole_price_penny % 100
 
 console.log(`The cost of ${n} buns: ${rub} rub ${pennies} cents`)
+
+
+
+
+const array5 = [1,2,3,4,5,5,5,6,7,8]
+let y = 0
+
+for (y=0; y<=array5.length-3; y++)
+{
+   if (array5[y]==array5[y+1])
+   {
+    if(array5[y+1]==array5[y+2])
+    {
+     console.log(true)
+    }
+   }
+}
+
+var text = 'here is my text'
+var x = 'e'
+let counting = 0
+
+const array6 = text.split('')
+
+let z = 0
+for (z=0; z<=array6.length-1; z++)
+{
+if (array6[z]==x)
+   {
+    counting++
+   }
+}
+console.log(counting)
