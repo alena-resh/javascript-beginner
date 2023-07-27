@@ -98,4 +98,61 @@ let object = {
     array: [2, 4, 6]
 }
 
-console.log(object.array[1])
+// console.log(object.array[1])
+
+// Условные ветвления
+
+// if (10 < 5) {
+//     console.log('Cheers, code works')
+// } else {
+//     console.log('Does not work')
+// }
+
+// Логические операторы
+// Логический И -  && и ИЛИ - ||
+
+// if (5 > 3 || 7 === 8) {
+//     console.log('Cheers code works!')
+// }
+
+
+// Циклы
+
+// 1 - инициализация, создание счетчика
+// 2 - условие при котором цикл работает (true/false)
+// 3 - результиоующая операция
+
+for (let i = 0; i < 10; i = i + 1) {
+    // console.log(i)
+}
+
+// применим скидку 10 процентов
+// let price = [100, 200, 300]
+
+// price[0] = price[0] * 0.9
+// price[1] = price[0] * 0.9
+// price[2] = price[0] * 0.9
+
+// console.log(price)
+
+let prices = [100, 200, 300];
+
+for (let i = 0; i < prices.length; i++) {
+  prices[i] = prices[i] * 0.9;
+}
+
+console.log(prices);
+// В консоли выведется: [90, 180, 270]
+
+
+// Функции
+
+// function getDetails(boxes) {
+//     return boxes * 60 * 0.9
+// }
+
+// let store = getDetails(1000)
+// let store2 = getDetails(5000)
+// let store3 = getDetails(15000)
+
+// console.log(store3)
